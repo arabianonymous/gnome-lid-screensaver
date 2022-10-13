@@ -1,0 +1,8 @@
+[Desktop Entry]
+Type=Application
+Exec=lidmonitor
+Hidden=false
+NoDisplay=false
+X-GNOME-Autostart-enabled=true
+Name=lidmonitor
+Comment=Laptop Lid-Controlled Screensaver for GNOME
