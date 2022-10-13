@@ -1,6 +1,6 @@
-# Lid Screensaver
-## For Laptops running GNOME 
-\
+# Lid-Controlled Screensaver 
+For Laptops running GNOME 
+
 ### Dependencies
 * [expect](https://pkgs.org/download/expect)
 
