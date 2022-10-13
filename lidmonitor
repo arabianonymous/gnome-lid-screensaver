@@ -1,11 +1,14 @@
-# Lid-Controlled Screensaver 
-For Laptops running GNOME 
+#!/usr/bin/expect -f
 
-### Dependencies
-* [expect](https://pkgs.org/download/expect)
+set timeout -1
 
-### Installing
-Run the following command in your terminal
-```
-git clone https://github.com/arabianonymous/gnome-lid-screensaver && cd ./gnome-lid-screensaver && ./install.sh
-```
+spawn acpi_listen
+expect {
+	"button/lid LID close" {
+		system dbus-send --session --dest=org.gnome.ScreenSaver --type=method_call /org/gnome/ScreenSaver org.gnome.ScreenSaver.SetActive boolean:true
+          	exp_continue
+		} "button/lid LID close" {
+		system dbus-send --session --dest=org.gnome.ScreenSaver --type=method_call org/gnome/ScreenSaver org.gnome.ScreenSaver.SetActive boolean:false
+		exp_continue
+		}
+}
