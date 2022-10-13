@@ -1,5 +1,5 @@
 # Lid-Controlled Screensaver 
-For Laptops running GNOME 
+For Laptops running GNOME/ using xdg-screensaver
 
 ### Dependencies
 The following packages are usually available for download via your distribution's package manager.
