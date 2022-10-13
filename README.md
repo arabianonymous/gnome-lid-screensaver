@@ -7,5 +7,5 @@ For Laptops running GNOME
 ### Installing
 Run the following command in your terminal
 ```
-git clone https://github.com/arabianonymous/gnome-lid-screensaver && cd ./gnome-lid-screensaver && sh ./install.sh
+git clone https://github.com/arabianonymous/gnome-lid-screensaver && cd ./gnome-lid-screensaver && chmod +x ./install && ./install
 ```
