@@ -5,8 +5,7 @@ set timeout -1
 spawn acpi_listen
 expect {
 	"button/lid LID close" {
-		system dbus-send --session --dest=org.gnome.ScreenSaver --type=method_call \
-          /org/gnome/ScreenSaver org.gnome.ScreenSaver.SetActive boolean:true
+		system xdg-screensaver activate
           	exp_continue
 		} "button/lid LID open" {
 		system xdg-screensaver reset
