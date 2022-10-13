@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/sh
 killall lidmonitor
 cp ./lidmonitor.desktop ~/.config/autostart/
 chmod +x ./lidmonitor
