@@ -19,4 +19,4 @@ sh ./uninstall.sh
 ```
 
 Known issues:
-- Immediately locks the screen, ignoring the lock screen delay, with [Caffeine Extension](https://extensions.gnome.org/extension/517/caffeine/) enabled.
+- Immediately locks the screen, ignoring the lock screen delay, when [Caffeine Extension](https://extensions.gnome.org/extension/517/caffeine/) enabled.
