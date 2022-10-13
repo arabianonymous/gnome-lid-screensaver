@@ -17,3 +17,6 @@ git clone https://github.com/arabianonymous/gnome-lid-screensaver && cd ./gnome-
 ```
 sh ./uninstall.sh
 ```
+
+Known issues:
+- Immediately locks the screen, ignoring the lock screen delay, with [Caffeine Extension](https://extensions.gnome.org/extension/517/caffeine/) enabled.
