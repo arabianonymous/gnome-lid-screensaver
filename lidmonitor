@@ -9,8 +9,7 @@ expect {
           /org/gnome/ScreenSaver org.gnome.ScreenSaver.SetActive boolean:true
           	exp_continue
 		} "button/lid LID open" {
-		system dbus-send --session --dest=org.gnome.ScreenSaver --type=method_call \
-          /org/gnome/ScreenSaver org.gnome.ScreenSaver.SetActive boolean:false
+		system xdg-screensaver reset
 		exp_continue
 		}
 }
