@@ -2,7 +2,9 @@
 For Laptops running GNOME 
 
 ### Dependencies
+The following packages are usually available for download via your distribution's package manager.
 * [expect](https://pkgs.org/download/expect)
+* [acpid](https://pkgs.org/download/acpid)
 
 ### Installing
 Run the following command in your terminal
@@ -10,5 +12,8 @@ Run the following command in your terminal
 git clone https://github.com/arabianonymous/gnome-lid-screensaver && cd ./gnome-lid-screensaver && sh ./install.sh
 ```
 
+### Uninstalling
 
-This script may have unexpected behavior when using the Caffeine gnome-shell extension. Currently working on an alternative.
+```
+sh ./uninstall.sh
+```
