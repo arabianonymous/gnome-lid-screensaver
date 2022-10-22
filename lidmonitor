@@ -7,8 +7,8 @@ expect {
 	"button/lid LID close" {
 		system xdg-screensaver activate
           	exp_continue
-		} "button/lid LID open" {
+	} "button/lid LID open" {
 		system xdg-screensaver reset
 		exp_continue
-		}
+	}
 }
